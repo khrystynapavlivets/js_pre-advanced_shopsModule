@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub">
+            <form name="balances" id="balancesForm">
+                <label for="qMoney">Balance</label>
+                <input id="qMoney" name="qMoney" type="text" value="UAH 1000" disabled>
+                <label for="qBeer">Beer</label>
+                <input id="qBeer" name="qBeer" type="text" value="100 pcs." disabled>
+                <label for="qWine">Wine</label>
+                <input id="qWine" name="qWine" type="text" value="50 pcs." disabled>
+                <label for="qPepsi">Pepsi</label>
+                <input id="qPepsi" name="qPepsi" type="text" value="80 pcs." disabled>
+            </form>
+        </div>
+        <div class="sub">
+            <form name="order" id="orderForm">
+                <label for="quantity">Number</label>
+                <input id="quantity" name="quantity" type="number" value="">
+                <input type="radio" name="article" id="aBeer" value="beer" checked><label for="aBeer">Beer</label>
+                <input type="radio" name="article" id="aWine" value="wine"><label for="aWine">Wine</label>
+                <input type="radio" name="article" id="aPepsi" value="pepsi"><label for="aPepsi">Pepsi</label>
+                <button type="submit" value="Add" name="submit-add">Add</button>
+            </form>
+            <form name="cart" id="cartForm">
+                <textarea name="checkout" id="checkout" disabled></textarea>
+                <button type="submit" name="submit">Buy</button>
+            </form>
+        </div>
+        <div class="sub" id="summary"></div>
+    </div>
+
+    <div id="shadow">
+        <div id="shadowModal">
+            <div id="close"><span id="close-icon" id="closeIcon"></span></div>
+            <div id="message"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="shop.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
